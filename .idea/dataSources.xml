@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="dorin_alexander_webshop@technology.c0hsploylsrw.us-east-1.rds.amazonaws.com" uuid="53016327-3570-4309-8657-7215a4d83d44">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://technology.c0hsploylsrw.us-east-1.rds.amazonaws.com:3306/dorin_alexander_webshop?serverTimezone=UTC&amp;useSSL=false&amp;allowPublicKeyRetrieval=true</jdbc-url>
+    </data-source>
+  </component>
+</project>
