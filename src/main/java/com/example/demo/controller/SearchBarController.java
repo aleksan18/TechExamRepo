@@ -19,7 +19,7 @@ import java.util.Optional;
 
 //Pagination, Sorting & Filtering
 @RestController
-
+@RequestMapping("/api")
 public class SearchBarController {
 
     @Autowired
@@ -35,7 +35,7 @@ public class SearchBarController {
     @GetMapping("/listings")
     public ResponseEntity<Map<String, Object>> getPageOfListings(
             @RequestParam(name = "page",defaultValue = "0") int page,
-            @RequestParam(name = "size") int size) { //Change The Default Size to bigger once we have more listings
+            @RequestParam(name = "size",defaultValue ="3") int size) { //Change The Default Size to bigger once we have more listings
 
         Pageable paging = PageRequest.of(page, size);
 
