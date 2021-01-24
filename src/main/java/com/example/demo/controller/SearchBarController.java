@@ -19,7 +19,7 @@ import java.util.Optional;
 
 //Pagination, Sorting & Filtering
 @RestController
-@RequestMapping("/search")
+
 public class SearchBarController {
 
     @Autowired
