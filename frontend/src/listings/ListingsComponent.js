@@ -40,7 +40,7 @@ export default class ListingsList extends Component {
   
     retrieveListings(currentPage) {
       http
-        .get("/api/listings?page=" + currentPage+"&size=1")
+        .get("/listings?page=" + currentPage+"&size=1")
         .then((response) => {
           //this is the response from web server
           this.setState({
@@ -84,7 +84,7 @@ export default class ListingsList extends Component {
   
     searchTitle() {
       http
-        .get("/api/listings/" + this.state.searchTitle, {
+        .get("/listings/" + this.state.searchTitle, {
 
         })
         .then((response) => {
