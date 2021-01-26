@@ -58,7 +58,7 @@ export default class ListingComponent extends Component {
   getListing(listing_id) {
 
     //http.get("/tutorials/" + listing_id, { headers: http.authHeader() });
-    http.get("/getOne/" + listing_id)
+    http.get("/api/getOne/" + listing_id)
       .then((response) => {
         this.setState({
           currentListing: response.data,
@@ -79,7 +79,7 @@ export default class ListingComponent extends Component {
     };
 
     http
-      .put("/update/" + this.state.currentListing.listing_id)
+      .put("/api/update/" + this.state.currentListing.listing_id)
       .then((response) => {
         this.setState((prevState) => ({
           currentListing: {
@@ -97,7 +97,7 @@ export default class ListingComponent extends Component {
   updateListing() {
     http
       .put(
-        "/update/" + this.state.currentListing.listing_id,
+        "/api/update/" + this.state.currentListing.listing_id,
         this.state.currentListing
       )
       .then((response) => {
