@@ -13,8 +13,8 @@ public class WebConfig implements WebMvcConfigurer {
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
                 .allowedOrigins(
-                        "http://localhost:8081/search/",
-                        "http://localhost:3000")
+                        "http://ec2-3-92-79-141.compute-1.amazonaws.com:8081/api/",
+                        "http://ec2-3-85-91-212.compute-1.amazonaws.com:3000")
                 //.allowedMethods("PUT", "DELETE")
                 //.allowedHeaders("header1", "header2", "header3")
                 //.exposedHeaders("header1", "header2")
